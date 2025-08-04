@@ -185,7 +185,7 @@ i {
   color: inherit;
 }
 .user-card__comments {
-  margin-bottom: 5.5rem;
+  margin-bottom: 6rem;
 }
 
 /* my-order */
@@ -479,7 +479,7 @@ i {
   }
   .user-card {
     grid-area: user;
-    max-height: 510px;
+    max-height: 560px;
     margin: 2rem auto;
     justify-self: flex-end;
   }
