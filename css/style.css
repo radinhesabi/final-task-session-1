@@ -317,6 +317,7 @@ i {
   border-bottom: 1px solid var(--border-color);
   box-shadow: var(--box-shadow-order);
 }
+
 .processing-card {
   border-radius: var(--xl-radius);
   max-width: 170px;
@@ -421,12 +422,17 @@ i {
 .description__btn p {
   white-space: nowrap;
 }
+.description__btn:hover {
+  gap: 2rem;
+  scale: 1.2;
+}
 .description__btn {
   cursor: pointer;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: all 0.15s ease-in;
 }
 .description__btn i {
   transform: translateY(15%);
