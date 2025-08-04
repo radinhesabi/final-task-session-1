@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "iranYekan";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Vazir.woff") format("woff");
+}
+@font-face {
+  font-family: "iranYekan";
+  font-weight: 700;
+  font-style: bold;
+  src: url("/assets/fonts/Vazir.woff") format("woff");
+}
+
+body {
+  font-family: "iranYekan";
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}

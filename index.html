@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>finalTask-1</title>
+  </head>
+  <body>
+    <div class="main container">
+      <section class="user-card">
+        <header class="user-card__header">
+          <div class="user-card__basic-information">
+            <span class="user-card__person-icon icon-holder">
+              <i class="fa-regular fa-user"></i>
+            </span>
+            <div class="user-card__info">
+              <p class="user-card__info-name">رضا جنیدی</p>
+              <p class="user-card__info-tel">۰۹۱۲۳۴۵۶۷۸۹</p>
+            </div>
+          </div>
+          <a class="user-card__pen-icon" href="#">
+            <i class="fa-duotone fa-solid fa-pen"></i>
+          </a>
+        </header>
+        <main class="user-card__main">
+          <ul class="user-card-list">
+            <li class="user-card__orders user-card__section">
+              <span>
+                <i class="fa-sharp fa-solid fa-house-chimney-user"></i>
+              </span>
+              <p>سفارش های من</p>
+            </li>
+            <li class="user__info user-card__section">
+              <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <p>اطلاعات حساب کاربری</p>
+            </li>
+            <li class="user-card__messages user-card__section">
+              <div class="user-card__preview">
+                <span>
+                  <i class="fa-jelly fa-regular fa-bell"></i>
+                </span>
+                <p>پیام ها</p>
+              </div>
+              <svg class="icon">
+                <use xlink:href="assets/images/notife-icon.svg#notife"></use>
+              </svg>
+            </li>
+            <li class="user-card__comments user-card__section">
+              <span>
+                <i class="fa-regular fa-comment"></i>
+              </span>
+              <p>نظرات من</p>
+            </li>
+            <li class="user-card__exit user-card__section">
+              <span>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              </span>
+              <p>خروج</p>
+            </li>
+          </ul>
+        </main>
+      </section>
+      <section class="my-order">
+        <header class="my-order__title">
+          <span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          <h2>سفارش های من</h2>
+        </header>
+        <main class="my-order__main">
+          <div class="my-order__slide">
+            <span class="icon-holder my-order__clock-icon">
+              <i class="fa-regular fa-clock"></i>
+            </span>
+            <span class="slide__info">
+              <p>در حال پردازش</p>
+              <h2>۵ سفارش</h2>
+            </span>
+          </div>
+          <div class="my-order__slide">
+            <span class="icon-holder my-order__tick-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </span>
+            <div class="slide__info">
+              <p>تحویل شده</p>
+              <h2>۴ سفارش</h2>
+            </div>
+          </div>
+          <div class="my-order__slide">
+            <span class="icon-holder my-order__reply-icon">
+              <svg class="icon">
+                <use
+                  xlink:href="assets/images/reply.svg#circle-u-turn-left-up"
+                ></use>
+              </svg>
+            </span>
+            <div class="slide__info">
+              <p>مرجوعی</p>
+              <h2>۲ سفارش</h2>
+            </div>
+          </div>
+          <div class="my-order__slide">
+            <span class="icon-holder my-order__cross-icon">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </span>
+            <div class="slide__info">
+              <p>لغو شده</p>
+              <h2>۳ سفارش</h2>
+            </div>
+          </div>
+        </main>
+      </section>
+      <section class="order-details order-details__primary">
+        <div class="processing-card">
+          <span>
+            <i class="fa-regular fa-clock"></i>
+          </span>
+          <span> در حال پردازش </span>
+        </div>
+        <div class="order-ids">
+          <span>
+            <p>تاریخ تحویل سفارش:</p>
+            <span>۱۴۰۳/۰۵/۰۷</span>
+          </span>
+          <span>
+            <p>کد سفارش:</p>
+            <span>۲۱۶۵۴۴۹</span>
+          </span>
+          <span class="order__price">
+            <p>۱,۵۵۰,۰۰۰</p>
+            <span>تومان</span>
+          </span>
+        </div>
+        <div class="order-description">
+          <div class="description__images">
+            <div class="description__image">
+              <img
+                src="assets/images/1.png"
+                alt=""
+                class="icon-holder description__image-1"
+              />
+              <span>۱</span>
+            </div>
+            <div class="description__image">
+              <img
+                src="assets/images/2.png"
+                alt=""
+                class="icon-holder description__image-2"
+              />
+              <span>۳</span>
+            </div>
+            <div class="description__image">
+              <img
+                src="assets/images/3.png"
+                alt=""
+                class="icon-holder description__image-3"
+              />
+              <span>۱</span>
+            </div>
+          </div>
+          <div class="description__btn">
+            <p>جزئیات سفارش</p>
+            <span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="order-details order-details__secondary">
+        <div class="processing-card">
+          <span>
+            <i class="fa-regular fa-clock"></i>
+          </span>
+          <span> در حال پردازش </span>
+        </div>
+        <div class="order-ids">
+          <span>
+            <p>تاریخ تحویل سفارش:</p>
+            <span>۱۴۰۳/۰۵/۰۷</span>
+          </span>
+          <span class="order-code">
+            <p>کد سفارش:</p>
+            <span>۲۱۶۵۴۴۹</span>
+          </span>
+          <span class="order__price">
+            <p>۱,۵۵۰,۰۰۰</p>
+            <span>تومان</span>
+          </span>
+        </div>
+        <div class="order-description">
+          <div class="description__images">
+            <div class="description__image">
+              <img
+                src="assets/images/1.png"
+                alt=""
+                class="icon-holder description__image-1"
+              />
+              <span>۱</span>
+            </div>
+            <div class="description__image">
+              <img
+                src="assets/images/2.png"
+                alt=""
+                class="icon-holder description__image-2"
+              />
+              <span>۳</span>
+            </div>
+            <div class="description__image">
+              <img
+                src="assets/images/3.png"
+                alt=""
+                class="icon-holder description__image-3"
+              />
+              <span>۱</span>
+            </div>
+          </div>
+          <div class="description__btn">
+            <p>جزئیات سفارش</p>
+            <span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
