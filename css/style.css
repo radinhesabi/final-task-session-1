@@ -21,6 +21,11 @@
   --border-color: rgba(230, 230, 230, 1);
   --order-card-bgc: rgba(47, 13, 12, 1);
 
+  --box-shadow-user: rgb(200, 202, 219) 3px 3px 6px 0px,
+    rgba(229, 229, 230, 0.353) -3px -3px 6px 1px;
+  --box-shadow-order: rgba(0, 0, 0, 0.1) 0px 5px 10px -8px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
   --sm-radius: 12px;
   --m-radius: 16px;
   --l-radius: 20px;
@@ -61,7 +66,6 @@ i {
   align-items: center;
   justify-content: center;
 }
-/* persian numbers */
 
 /* user-card */
 
@@ -71,6 +75,8 @@ i {
   margin: 5rem auto;
   padding: 2.5rem 1.5rem;
   border-radius: var(--l-radius);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .user-card__pen-icon {
   cursor: pointer;
@@ -81,8 +87,7 @@ i {
   transform: translateY(-5px);
 }
 .user-card__person-icon {
-  box-shadow: rgb(200, 202, 219) 3px 3px 6px 0px,
-    rgba(229, 229, 230, 0.353) -3px -3px 6px 1px;
+  box-shadow: var(--box-shadow-user);
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
@@ -180,17 +185,12 @@ i {
   color: inherit;
 }
 .user-card__comments {
-  margin-bottom: 5.5rem;
+  margin-bottom: 6rem;
 }
 
-.user-card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
 /* my-order */
 .my-order .my-order__slide {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -8px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: var(--box-shadow-order);
 }
 .my-order__title {
   display: flex;
@@ -315,9 +315,9 @@ i {
 .order-details {
   padding: 1.5rem 2rem;
   border-bottom: 1px solid var(--border-color);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -8px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: var(--box-shadow-order);
 }
+
 .processing-card {
   border-radius: var(--xl-radius);
   max-width: 170px;
@@ -422,12 +422,17 @@ i {
 .description__btn p {
   white-space: nowrap;
 }
+.description__btn:hover {
+  gap: 2rem;
+  scale: 1.2;
+}
 .description__btn {
   cursor: pointer;
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: all 0.15s ease-in;
 }
 .description__btn i {
   transform: translateY(15%);
@@ -474,7 +479,7 @@ i {
   }
   .user-card {
     grid-area: user;
-    max-height: 510px;
+    max-height: 560px;
     margin: 2rem auto;
     justify-self: flex-end;
   }
